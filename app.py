@@ -36,3 +36,28 @@ print("Read Successfully!")
 print()
 
 print(df)
+print()
+
+print("Rows :", len(df))
+print("Columns :", len(df.columns))
+print()
+
+print("Column List")
+
+print(df.columns)
+
+print()
+
+print("Preview")
+
+print(df.head())
+print()
+print("Data Types")
+print("-" * 30)
+
+print(df.dtypes)
+print()
+print("Missing Values")
+print("-" * 30)
+
+print(df.isnull().sum())

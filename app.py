@@ -18,4 +18,21 @@ print()
 print("Next Step:")
 print("Load Excel Data")
 print()
+
 print("=" * 50)
+
+import pandas as pd
+
+print()
+print("=" * 50)
+print("Reading Excel File...")
+print("=" * 50)
+
+excel_path = "data/raw/数据表1.xlsx"
+
+df = pd.read_excel(excel_path)
+
+print("Read Successfully!")
+print()
+
+print(df)

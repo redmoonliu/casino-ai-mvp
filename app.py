@@ -61,3 +61,40 @@ print("Missing Values")
 print("-" * 30)
 
 print(df.isnull().sum())
+print()
+print("Statistics")
+print("-" * 30)
+
+print(df.describe())
+print()
+print("Business Analysis")
+print("-" * 30)
+
+print("Average Salary")
+print(df["薪酬"].mean())
+print()
+
+print("Maximum Salary")
+print(df["薪酬"].max())
+
+print()
+
+print("Minimum Salary")
+print(df["薪酬"].min())
+
+print()
+
+print("Total Salary")
+print(df["薪酬"].sum())
+print()
+
+print("Employee Count")
+print(df["姓名"].count())
+print()
+
+print("Gender Distribution")
+print(df["性别"].value_counts())
+print()
+
+print("Average Salary by Gender")
+print(df.groupby("性别")["薪酬"].mean())
